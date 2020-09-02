@@ -5,12 +5,7 @@ const posts = require('./data/post.json');
 const app = express();
 const router = require('./route');
 const { handlerError } = require('./helper/error');
-const reformatPost = require('./helper/convertData');
-const unified = require('unified');
-const markdown = require('remark-parse');
-const remark2rehype = require('remark-rehype');
-const html = require('rehype-stringify');
-const highlight = require('remark-highlight.js');
+
 // PORT
 const PORT = process.env.PORT || 1234;
 
