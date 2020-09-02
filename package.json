@@ -1,0 +1,29 @@
+{
+  "name": "r_js_backend",
+  "version": "1.0.0",
+  "description": "Backend end for my blog",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index"
+  },
+  "author": "Abdulrahman Alkhudharyi",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.26",
+    "mongoose-timestamp": "^0.6.0",
+    "rehype-highlight": "^4.0.0",
+    "rehype-stringify": "^8.0.0",
+    "remark-highlight.js": "^6.0.0",
+    "remark-parse": "^8.0.3",
+    "remark-rehype": "^7.0.0",
+    "unified": "^9.1.0"
+  },
+  "devDependencies": {
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.4"
+  }
+}
