@@ -10,7 +10,7 @@ exports.index = async (req, res, next) => {
     if (!blogs) {
       throw new ErrorHandler(404, 'Database is empty ');
     }
-    res.status(200).json(blogs);
+    res.status(200).json({ message: 'success' });
     next();
   } catch (error) {
     next(error);
