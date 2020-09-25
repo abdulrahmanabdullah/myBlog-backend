@@ -1,7 +1,6 @@
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
-const posts = require('./data/post.json');
 const app = express();
 const router = require('./route');
 const { handlerError } = require('./helper/error');
