@@ -6,7 +6,7 @@ const router = require('./route');
 const { handlerError } = require('./helper/error');
 
 // PORT
-const PORT = 1234;
+const PORT = process.env.PORT || 1234;
 
 const mongoose = require('mongoose');
 
