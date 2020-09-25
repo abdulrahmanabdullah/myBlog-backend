@@ -13,10 +13,13 @@ const PORT = 1234;
 const mongoose = require('mongoose');
 
 // Connect to mongodb atlas
-mongoose.connect(process.env.MONGODB_URL, {
-  useNewUrlParser: true,
-  useUnifiedTopology: true,
-});
+mongoose.connect(
+  'mongodb+srv://abdulrahman:Freedom&&30@blog-cluster.hp51i.gcp.mongodb.net/blogs?retryWrites=true&w=majority',
+  {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+  }
+);
 
 mongoose.set('useFindAndModify', false);
 
