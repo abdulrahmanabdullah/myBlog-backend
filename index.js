@@ -8,7 +8,7 @@ const { handlerError } = require('./helper/error');
 
 dotenv.config();
 // PORT
-const PORT = process.env.PORT || 1234;
+const PORT = 1234;
 
 const mongoose = require('mongoose');
 
