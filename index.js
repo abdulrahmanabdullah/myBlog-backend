@@ -2,11 +2,11 @@ const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
 const app = express();
-const dotenv = require('dotenv');
+// const dotenv = require('dotenv');
 const router = require('./route');
 const { handlerError } = require('./helper/error');
 
-dotenv.config();
+// dotenv.config();
 // PORT
 const PORT = 1234;
 
