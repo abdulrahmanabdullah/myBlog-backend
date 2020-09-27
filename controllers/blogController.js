@@ -73,7 +73,8 @@ exports.deleteBlog = async (req, res, next) => {
     if (!blog) {
       throw new ErrorHandler(404, 'Blog not found');
     }
-    res.send(204).json({ message: 'success', blog });
+    res.setStatus = 204;
+    res.json({ message: 'success', blog });
     next();
   } catch (error) {
     next(err);
@@ -83,8 +84,8 @@ exports.deleteBlog = async (req, res, next) => {
 // delete all blogs
 exports.deleteAllBlogs = async (req, res, next) => {
   try {
-    const counte = await Blog.countDocuments();
-    if (counte === 0) {
+    const count = await Blog.countDocuments();
+    if (count === 0) {
       throw new ErrorHandler(404, 'Database is empty');
     } else {
       await Blog.deleteMany({});
